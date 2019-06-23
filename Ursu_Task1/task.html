@@ -1,0 +1,143 @@
+<html>
+    <head>
+            <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+            <script src="https://kit.fontawesome.com/5ff12efa5d.js"></script>
+            <style>
+                body{
+                    font-family:'Montserrat';
+                }
+            .box {
+                font-size:2 px;
+                font-family: 'Montserrat';
+                padding-bottom: 20%;
+                padding-top: 20%;
+                  }
+          div.main{
+               width: 1200px;
+               margin-left:auto;
+               margin-right:auto;
+               height: 480px;
+               
+           }
+            div.form
+            {
+                float:right;
+                width: 380px;
+                height: 480px;
+                border: none;
+                align-content: center;
+                text-align: center;
+                -webkit-box-shadow:0px 0px 5px 2px grey;
+                -moz-box-shadow:0px 0px 5px 2px grey;
+                box-shadow:0px 0px 5px 2px grey;
+                
+            }
+            div.image{
+                float: left;              
+                width: 795px;
+                
+                height: 480px;
+            }
+            .form input[type="text"], .form input[type="number"], .form input[type="email"],.form input[type="password"]{
+               
+                width: 270px;
+                padding: 5px 5px 5px 5px;
+                border: none;
+                border-bottom: 1px solid black; 
+             }
+             .input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+margin: 0px 40px;
+
+  margin-bottom: 15px;
+
+}
+
+.icon {
+  padding: 10px;
+    min-width: 50px;
+  text-align: center;
+}
+
+            .box input[type="submit"]{
+             border: 0;
+    background-color: #2ecc71;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    -webkit-box-shadow:0px 0px 7px 2px #2ecc71;
+ -moz-box-shadow:0px 0px 7px 2px #2ecc71;
+ box-shadow:0px 0px 7px 2px #2ecc71;
+       border: 2px solid #2ecc71;
+padding: 14px 10px;
+width: 300px;
+outline: none;
+color:white;
+border-radius: 4px;
+cursor: pointer;
+            }
+            h1{
+                font-family: 'Montserrat';
+                text-align: center;
+             }
+             .sp{
+               
+                width: auto;
+                margin: 5px 40px ;
+                font-size: 10px;
+                }
+             .sp1{
+                 width: 140px;
+                 float: left;
+                 
+             }
+             .sp2{float: right; width: 140px;  }
+             
+             .sp2 a{ text-decoration: none;}
+             .sign{
+                 margin: 5px 0px;
+                 font-weight: bold;
+             }
+             .last{ font-size: 10px;}
+             .last a{ text-decoration: none; color: red;           }
+             .i3{height: 300px; }
+             .i1{height: 20px; margin-top: 40px;margin-bottom: 20px; vertical-align: bottom;font-family:'Montserrat'; font-weight: bold; }
+             .i2{height: 100px;margin:0px 80px; margin-top: 40px; color: gray; font-size: 10px;}
+            </style>
+       
+    </head>
+    <body>
+        <h1>GADGET SIGN UP FORM</h1>
+        <div class="main">
+        <div class="image"> 
+            <div align="center" class="i1">MANAGE YOUR GADGET ACCOUNT</div>
+            <div align="center" class="i2">Lorem ipsum sit amet, consectetuer adipiscing elit. Aenean commondo ligula eget Lorem ipsum dolor sit amet, consetetuer adipiscing elit. Aenean commodo ligula ege
+            </div><div align="center" class="i3">
+            <img src="Capture.jpg" ></div>
+        </div>
+        
+        <div class="form">
+        <form class="box" action="index.html" method="post">
+           <div class="sign">SIGN UP HERE</div> <br>
+          <div class="input-container"><span><i class="far fa-user"></i>&nbsp;|
+            <input type="text" name="n" placeholder="Name"> <BR></span></div> 
+                <div class="input-container"><span><i class="fas fa-phone-alt"></i>&nbsp;|
+            <input type="number" name="num" placeholder="Phone"><br></span></div>
+            <div class="input-container"><i class="far fa-envelope"></i>&nbsp;|
+            <input type="email" name="em" placeholder="Email"><br></div>
+            <div class="input-container"><i class="fas fa-lock"></i>&nbsp;|
+            <input type="password" name="pass" placeholder="Password"> <br></div>
+        
+            <div class="sp"><span class="sp1"><input type="checkbox" name="rem" size="5px"> &nbsp; Remember Me </span><span class="sp2"> 
+                <a href=""> Forgot Password...?</a></span></div>
+       <br>
+          <div class="sub"><input type="submit" name="sub" value="Sign Up"></div>
+          <br>
+          <div class="last">Don't have an account..? &nbsp; <span><a href="">Login Here</a></div>
+        </form>
+   </div>
+        </div>
+    </body>
+</html>

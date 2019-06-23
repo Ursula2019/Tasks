@@ -1,0 +1,251 @@
+body{
+    margin: 0px auto;
+    width:1200px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.flex1{
+    display: flex;
+}
+.btn{
+    margin-left: auto;
+    padding: 10px 20px;
+ }
+ .logo{
+    font-weight: bold;
+    font-size: 20px;
+ }
+ .items >ul{
+     display: flex;
+     margin-left: auto;
+     font-size: 20px;
+ }
+ .items > ul> li>a{
+    text-decoration: none;
+    padding: 10px;
+ }
+
+ li{
+    list-style: none;
+ }
+ .section1{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 600px;
+ }
+ .image1{
+     margin-left:auto;
+ }
+.p1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.p2, .p3{
+    text-align: center;
+    font-size: 20px;
+
+}
+ button{
+    padding: 10px 20px;
+    border-radius: 5px;
+ }
+ .contact{
+    background-color: limegreen;
+ }
+ .seework, .topcontact{
+    background-color: blue;
+ }
+ .flex2, .flex3{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: row wrap;
+    
+ }
+ .flex2{
+     align-items: center;
+ }
+ .flex4{
+     display: flex;
+     justify-content: center;
+ }
+ .image{
+     
+     height: 240px;
+     width: 256px;
+     margin:10px 26px;
+     display: block;
+
+ }
+ .image img{
+     display: block;
+     width: 256px;
+     height:240px;
+ }
+
+ .images_wrapper{
+    position: relative;
+    width: 256px;
+    height: 240px;
+ }
+
+.images_wrapper:hover{
+   opacity: .2;
+}
+
+.images_wrapper:hover .overlay{
+   display: block;
+}
+
+.overlay{
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   height: 100%;
+   width: 100%;
+   display: none;
+   transition: .3s ease;
+   background: #000;
+}
+.overlay i{
+   color: white;
+   font-size: 100px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+
+}
+ .section3{
+    background: #3261ea;
+    height: 600px;
+ }
+ .title{
+    color: #ffffff;
+    margin: 19.92px 0px;
+    text-align: center;
+    padding: 25px;
+ }
+ .title p{
+    line-height: 15px;    
+ }
+ .flex5{
+      margin-top: 100px;
+        display: flex;
+        justify-content: center;
+ }
+ .col{
+    flex: 0 0 25%;
+    margin: 20px 10px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 100px;
+ }
+ .col p{
+    line-height: 20px;
+    margin: 20px 0;
+    font-weight: 400;
+    font-style: italic;
+    color: darkgray;
+    text-align: left;
+    font-size: 13px;
+ }
+ .author {
+    display: flex;
+    flex: 1 1 auto;
+ }
+ .author img{
+    align-self: center;
+    padding: 10px;
+ }
+ .column_images{
+     display: flex;
+     max-width: 1200px;
+     flex-wrap: row wrap;
+     justify-content: space-around;
+     margin:10px 26px;
+ }
+.section4{
+   height:500px;
+   /* display: flex; */
+}
+ .flex6{
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-flow: row wrap;
+   text-align: center;
+   flex-wrap: nowrap;  
+}
+.col p{
+   line-height: 20px;
+   margin:20 px 0;
+}
+.subscribe{
+   background: #3261ea;
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   flex-flow: row wrap;
+   text-align: center;
+   align-items: center;
+   justify-content: space-evenly; 
+   height: 300px;
+}
+.subscribe p{
+   color: #fff;
+}
+input {
+   width: 200px;
+   height: 45px;
+}
+.subscribe button {
+   background: #3261ea;
+   margin-left: -200px;
+   border: #3261ea;
+   width: 40px;
+   height: 40px;
+}
+footer{
+   max-width: 1200px;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   align-content: center;
+   margin-left: auto;
+   padding: 0;
+   text-align: left;
+}
+footer .col{
+   width: 20%;
+    margin: 10px; 
+}
+footer ul{
+   padding: 0;
+   list-style: none;
+}
+footer li, a{
+   text-align: left;
+   text-decoration: none;
+   counter-reset: #000;
+}
+.copyright-rightmost{
+   display: flex;
+   margin-left: auto;
+}
+.copyright{
+   padding:10px;
+   border-top: 1px solid lightgray;
+   margin-top: 10px;
+   display: flex;
+}

@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Roboto';
+}
+
+header {
+    background-image: url("../images/home-banner.jpg");
+    .menu-bar {
+        width: 100%;
+        .menu-logo {
+            margin: 25px;
+        }
+        .menu-nav {
+            margin: 25px;
+            float: right;
+        }
+    }
+    ul {
+        li {
+            text-decoration: none;
+            display: inline;
+            text-transform: uppercase;
+            padding: 10px;
+            color: #000410;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+}
+@mixin uptext {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section {
+    margin: 20px 0px;
+    text-align: center;
+    position: relative;
+    .container {
+        position: relative;
+        display: inline-block;
+        width: 70%;
+    }
+    .banner {
+        font-size: 20px;
+        @include uptext();
+        
+    }
+    .banner-name {
+        font-size: 50px;
+        @include uptext();
+    }
+}
+
+.row-1 {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.col-6 {
+    float: left;
+    width: calc((1/2)*100%);
+    height: 600px;
+    padding: 0px 10px;
+    text-align: center;
+}
+@mixin foot {
+    padding: 25px;
+    margin: 20px;
+    text-align: left;
+}
+
+.col-4 {
+    float: left;
+    width: calc((1/3.5)*100%);
+    border: 1px solid #aeb8b3;
+    border-radius: 5px;
+    @include foot();
+}
+
+.col-4-footer {
+    float: left;
+    width: calc((1/3.3)*100%);
+    @include foot();
+}
+
+.col-4-footer-mini {
+    float: right;
+    width: 225px;
+    @include foot();
+}
+
+footer {
+    text-align: center;
+    height: 475px;
+    padding: 50px 200px;
+    .social-footer {
+        float: left;
+        margin: 20px 0px;
+    }
+    .container-subscribe {
+        float: left;
+    }
+}
+
+footer,
+footer+.row-1 {
+    background: #000410;
+}
+@mixin align {
+    text-align: center;
+    text-transform: bold;
+}
+.left {
+    text-align: left;
+    text-transform: bold;
+    font-size: 30px;
+    margin: 30px 10px;
+}
+.center{
+    @include align();
+    font-size: 30px;
+    margin: 30px 10px;
+}
+
+.card-title-box {
+    @include align();
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.card-title-box-white {
+    @include align();   
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.card-info {
+    font-size: 15px;
+    margin: 20px 0px;
+}
+
+.card-info-white {
+    font-size: 15px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.cat {
+    margin: 20px 0;
+    .project-categories {
+        li {
+            text-decoration: none;
+            display: inline;
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+            display: inline;
+            padding: 10px;
+        }
+    }
+}
+
+.container-subscribe {
+    height: 40px;
+    position: relative;
+    .btn-small {
+        width: 23px;
+        height: 23px;
+        padding: 0px;
+        margin: 5px 5px 0px 0px;
+    }
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/*.float-left {
+    float-align: left;
+}*/
+
+.img1 {
+    background-image: url("../images/projects-1.jpg")
+}
+
+.img2 {
+    background-image: url("../images/projects-2.jpg")
+}
+
+.img3 {
+    background-image: url("../images/projects-3.jpg")
+}
+
+.img4 {
+    background-image: url("../images/projects-4.jpg")
+}
+
+.img5 {
+    background-image: url("../images/projects-5.jpg")
+}
+
+.img6 {
+    background-image: url("../images/projects-6.jpg")
+}
+
+@media only screen and (max-width:768px){
+@mixin responsive {
+    .menu-bar, .menu-nav li, .align-left, .banner, .banner-name,.card-info, .btn
+     .row-1,.section, .img1,.img2,.img3,.img4,.img5,.img6,.col-4-footer, .col-4, .col-4 i, .col-4-footer-mini,.social-footer {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    footer,.col-4-footer-mini,.col-4-footer{
+    background: #000410;
+    height: auto;
+}
+    header,main,footer{
+        padding-bottom:20px; 
+    }
+}}
+
+@media only screen and (min-width:920px){
+    @include responsive();
+}
