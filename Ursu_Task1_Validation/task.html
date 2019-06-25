@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bitsbeat: task1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=display-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <script src="login.js"></script>
+    <h1 class="title" align="center">GADGET SIGN UP FORM</h1>
+
+    <div class="main">
+        <div class="leftcontain">
+            <h4 align="center"> MANAGE YOUR GADGETS ACCOUNT</h>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel, aliquid nam quisquam hic quo ut
+                    tempore non enim voluptate aperiam velit repellat. Modi quibusdam, dolorum exercitationem
+                    perferendis quidem eos?</p>
+                <img src="Capture.JPG">
+
+        </div>
+
+
+        <div class="rightcontain">
+            <h4 align="center">SIGN UP HERE</h4>
+            <form class="box" action="newpage.html" id="form1" onsubmit="return validate()">
+                <div class="naam">
+                    <span class="fa fa-user-o" aria-hidden="true">
+                        <input type="text" id="name" name="Name" placeholder="Name"><br />
+                    </span>
+
+
+                </div>
+                <div class="no">
+                    <span class="fa fa-phone" aria-hidden="true">
+                        <input type="number" id="num" name="Num" placeholder="Phone"><br />
+                    </span>
+                </div>
+                <div class="mail">
+                    <span id="message">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="text" id="email" name="email" placeholder="Email Address" value=""><br />
+                    </span>
+
+
+
+                </div>
+                <div class="secure">
+                    <span id="pass">
+                        <i class="fa fa-lock icon"></i>
+                        <input id="password" type="password" name="pass" placeholder="Password" value="">
+                        <i class="fa fa-eye" id="eye"></i>
+                        <br />
+                    </span>
+                </div>
+                <div class="secure">
+                    <span id="pass-con">
+                        <i class="fa fa-lock icon"></i>
+                        <input id="passwords" type="password" name="pass" placeholder="Confirm Password" value=""><br />
+                    </span>
+                </div>
+
+                <div class="two1">
+                    <div class="first">
+                        <span id="check"></span>
+                        <input type="checkbox" id="agree" onclick="checkfunction()"> Agree to Terms and Conditions
+                    </div>
+                    <div class="second">
+                        <span class="forget">Forget <a href=""> password</a></span>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" id="submit" name="sub" value="Sign Up" onclick="submitX()">
+                </div>
+                <div class="end">
+                    Don't have an account..?
+                    <span>
+                        <a href>Login Here</a>
+                    </span>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var pwd = document.getElementById("password");
+        var eye = document.getElementById("eye");
+
+        eye.addEventListener("click", togglePass);
+
+        function togglePass() {
+            eye.classList.toggle('active');
+
+            if (pwd.type == "password") {
+                pwd.type = "text";
+            }
+
+        }
+
+        function checkfunction() {
+            var idnames = ["name", "num", "email", "password", "passwords"];
+            var fieldname;
+            let checkval = 0;
+            console.log("asdasda")
+
+
+            if (document.getElementById("agree").checked == true) {
+
+                for (i = 0; i < 5; i++) {
+                    fieldname = idnames[i];
+
+                    if (document.getElementById("form1").elements[i].value != "") {
+                        checkval += 1;
+                    }
+
+                }
+
+                if (checkval === 5) {
+                    document.getElementById('submit').disabled = false;
+                    console.log("asdasda")
+
+
+                }
+                else {
+                    document.getElementById('submit').disabled = true;
+                    console.log("asdasda")
+s
+                }
+
+            }
+        }
+
+
+        function submitX() {
+            console.log('check localstoragecheck');
+            var inputName = document.getElementById("name").value;
+            var inputNum = document.getElementById("num").value;
+            var inputEmail = document.getElementById("email").value;
+            var inputPass = document.getElementById("password").value;
+
+            localStorage.setItem("name", inputName);
+            localStorage.setItem("num", inputNum);
+            localStorage.setItem("email", inputEmail);
+            localStorage.setItem("password", inputPass);
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

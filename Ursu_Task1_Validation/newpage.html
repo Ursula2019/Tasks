@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<s>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show1">Name:</p> 
+    <p id="show2">Number:</p> 
+    <p id="show3">Email:</p> 
+    <p id="show4">Password:</p> 
+    
+    <script>
+        document.getElementById("show1").innerHTML=localStorage.getItem("name");
+        document.getElementById("show2").innerHTML=localStorage.getItem("num");
+        document.getElementById("show3").innerHTML=localStorage.getItem("email");
+        document.getElementById("show4").innerHTML=localStorage.getItem("password");
+    </script>
+</body>
+</html>
