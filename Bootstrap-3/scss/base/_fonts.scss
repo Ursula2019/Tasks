@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+  color: #4172b8;
+}
+.icon-googleplus:before {
+  content: "\e901";
+  color: #dc4e41;
+}
+.icon-linkedin:before {
+  content: "\e902";
+  color: #0077b5;
+}
+.icon-twitter:before {
+  content: "\e903";
+  color: #1da1f2;
+}
+.icon-files:before {
+  content: "\e904";
+}
+.icon-mail:before {
+  content: "\e90d";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-log-in:before {
+  content: "\e906";
+}
+.icon-arrow-right:before {
+  content: "\e907";
+}
+.icon-arrow-left:before {
+  content: "\e908";
+}
+.icon-briefcase:before {
+  content: "\e909";
+}
+.icon-shopping-cart:before {
+  content: "\e90a";
+}
+.icon-heart-outline:before {
+  content: "\e90b";
+}
+.icon-user:before {
+  content: "\e90c";
+}
+.icon-copy:before {
+  content: "\e92c";
+}
