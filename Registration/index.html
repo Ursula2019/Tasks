@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="init()">
+    <div id="container">
+        <header>
+            <h1 class="text text-center">User Form Registration</h1>
+        </header>
+        <main>
+            <div class="row">
+            <div class="col-lg-6">
+                <form action = "dynamo.html" onsubmit="return validation()" method="GET" id="register" name="register">
+                    <div class="form-group">
+                        <label>User Name  <i class="fa fa-user"></i></label>
+                        <input type="text" id="uname" class="form-control" autocomplete="off"> 
+                        <span id="valname" class="text-danger" ></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Password  <i class="fa fa-lock"></i></label>
+                        <input type="text" id="pass1" class="form-control" autocomplete="off">
+                        <span id="valpass1" class="text-danger" ></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Confrim Password <i class="fa fa-lock"></i></label>
+                        <input type="text" id="pass2" class="form-control" autocomplete="off">
+                        <span id="valpass2" class="text-danger" ></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile <i class="fa fa-mobile-phone" style="font-size:35px"></i></label>
+                        <input type="text" id="mobile" class="form-control" autocomplete="off">
+                        <span id="valmobile" class="text-danger" ></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email <i class="fa fa-envelope"></i></i></label>
+                        <input type="text" id="email" class="form-control" autocomplete="off">
+                        <span id="valemail" class="text-danger" ></span>
+                    </div>
+                    <input type="submit" id="btn" value="Register">
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <img src = "welcome.jpg">
+            </div>
+        </div>
+        </main>
+    </div>
+    <script src="validate.js"></script>
+</body>
+
+</html>
