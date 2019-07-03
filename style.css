@@ -1,0 +1,138 @@
+button{
+    margin: 0%;
+    padding: 0%;
+    background: green;
+}
+
+body{
+    font-family: 'Montserrat';
+    margin: 0px;
+
+}
+
+p{
+    color: #D3D3D3;
+}
+div{
+    display: block;
+}
+
+
+.leftcontain{
+    float: left;
+    width: 800px;
+    padding: 40px 40px 32px;
+}
+
+
+
+
+.rightcontain{
+    float: right;
+    width: 400px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 8px 1px;
+    padding: 45px;
+    margin-right: 5%;
+ 
+}
+
+/*.rightcontain input[type="text"], .rightcontain input[type="phone no"], .rightcontain input[type="text"], .rightcontain input[type="text"], .rightcontain input [type="password"]{
+    width: 400px;
+    border: none; 
+     
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin-right: 5%;
+
+
+}
+ */
+
+ .rightcontain input[type="text"], .rightcontain input[type="number"], .rightcontain input[type="password"],.rightcontain input[type="email"] {
+    
+    border: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width: 270px;
+ }
+
+
+.naam{
+    padding-bottom: 2em;
+}
+
+.no{
+    padding-bottom: 2em;
+}
+
+.mail{
+    padding-bottom: 2em;
+}
+
+.secure{
+    padding-bottom: 2em;
+}
+
+.first{
+    float: left;
+}
+
+.second{
+    float: right;
+}
+
+.remme{
+    margin-right: 4ex
+}
+
+/*span.forget{
+    display: block;
+    float: none;
+
+}*/
+
+
+h1{
+    font-weight: bold ;
+}
+
+.info{
+    color: #ff0000;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background-color: #2ecc71;
+    display: block;
+    margin: 37px auto;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 7px 2px #2ecc71;
+    -moz-box-shadow: 0px 0px 7px 2px #2ecc71;
+    box-shadow: 0px 0px 7px 2px #2ecc71;
+    border: 2px solid #2ecc71;
+    padding: 18px 19px;
+    width: 300px;
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.end a{
+    text-decoration: none;
+    color: red;
+}
+
+.second a{
+    text-decoration: none;
+    
+}
+
+.fa-eye{
+    cursor: pointer;
+}
+.active{
+    color:dodgerblue;
+
+}
