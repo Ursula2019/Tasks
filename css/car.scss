@@ -1,0 +1,51 @@
+@mixin lane {
+  width: 33.33%;
+  height: 700px;
+  border-right: 2px solid white;
+}
+
+.road {
+  background-color: black;
+  margin: 0 auto;
+  width: 800px;
+  height: 700px;
+  display: flex;
+  left: 0px;
+  position: relative;
+
+  .lane1 {
+    @include lane();
+  }
+  .lane2 {
+    @include lane();
+    border-left: 2px solide white;
+  }
+  .lane3 {
+    @include lane();
+  }
+}
+
+.player {
+  height: 150px;
+  position: relative;
+  top: 480px;
+  left: 80px;
+}
+.non-player1 {
+  height: 150px;
+  top: 0;
+  left: 50px;
+  position: relative;
+}
+.non-player2 {
+  height: 150px;
+  position: absolute;
+  left: 50px;
+  top: -110;
+}
+.non-player3 {
+  height: 150px;
+  position: absolute;
+  // right: px;
+  top: -110;
+}
